@@ -138,7 +138,7 @@
         //NSLog(@"--------%ld",_page);
         [_dataSouce addObjectsFromArray:[ThirdPageModelONE parseRespondsData:responsData]];
         [_collectionView reloadData];
-       // NSLog(@"%@",_dataSouce);
+        //NSLog(@"%@",_dataSouce);
         
     } withFaileBlock:^(NSError *error) {
         NSLog(@"%@",error);
@@ -213,7 +213,7 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     ThirdPageModelONE *model = _dataSouce[indexPath.row];
-    NSLog(@"++++++%@",model.title);
+    //NSLog(@"++++++%@",model.title);
 }
 
 
