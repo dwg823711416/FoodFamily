@@ -1,0 +1,66 @@
+//
+//  FoodFamily.pch
+//  FoodFamily
+//
+//  Created by qianfeng on 15/12/21.
+//  Copyright © 2015年 杜卫国. All rights reserved.
+//
+
+#ifndef FoodFamily_pch
+#define FoodFamily_pch
+#import <UIKit/UIKit.h>
+#import "NetDataEngine.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "CoreData+MagicalRecord.h"
+#import <pop/POP.h>
+#import <UMengSocial/UMSocial.h>
+#import "Help.h"
+#import "MMProgressHUD.h"
+#import "JHRefresh.h"
+//屏幕尺寸定义
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE   [UIScreen mainScreen].bounds.size
+#define SCREEN_RECT   [UIScreen mainScreen].bounds
+#define UMAPP_KEY    @"567b58af67e58e4a6200054b"
+#define JPushAPP_key @"faa5e8aca63e114c69959c99"
+#define GaoDoAPP_KEY @"0c4c68077f0ac6be79ae3cf7e20f1e77"
+
+//网络接口
+//获取 掌厨ip地址
+//http://client.izhangchu.com/get-videoIP.html
+
+#define kHost_And_Port @"http://121.41.88.115"
+// 主界面
+//http://121.41.88.115/HandheldKitchen/api/more/tblcalendaralertinfo!getHomePage.do?phonetype=2&page=0&pageRecord=10&user_id=&is_traditional=0
+
+#define URL_Food_First kHost_And_Port@"/HandheldKitchen/api/more/tblcalendaralertinfo!getHomePage.do?phonetype=2&page=%ld&pageRecord=10&user_id=&is_traditional=0"
+
+//http://121.41.88.115//HandheldKitchen/api/more/tblcalendaralertinfo!get.do?year=2015&month=11&day=24&page=1&pageRecord=10&is_traditional=0
+
+// 主界面日期 (传值: year/month/day)
+#define kMainDate_Url kHost_And_Port@"/HandheldKitchen/api/more/tblcalendaralertinfo!get.do?year=%@&month=%@&day=%@&page=1&pageRecord=10&is_traditional=0"
+
+
+//美味生活界面
+#define URL_MWLife  @"http://api.2meiwei.com/v1/collect/29973/?idx=%ld&size=18"
+//制作步骤
+//http://api.2meiwei.com/v1/recipe/27404/&appname=mw_ios&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522
+#define URL_FOOD_DETAILs @"http://api.2meiwei.com/v1/recipe/%@/&appname=mw_ios&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+//滋阴
+#define URL_ZY @"http://api.2meiwei.com/v1/collect/56182/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+//补阳
+#define URL_BY @"http://api.2meiwei.com/v1/collect/56180/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+//止咳
+#define URL_ZK @"http://api.2meiwei.com/v1/collect/57744/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+//美容
+#define URL_MR  @"http://api.2meiwei.com/v1/collect/2755557/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+//养生
+#define URL_YS @"http://api.2meiwei.com/v1/collect/39722/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=8650920216775"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* FoodFamily_pch */

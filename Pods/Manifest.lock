@@ -1,0 +1,19 @@
+PODS:
+  - AMap2DMap (3.2.0)
+  - AMapSearch (3.2.0)
+  - pop (1.0.8)
+  - UMengSocial (4.2.3)
+
+DEPENDENCIES:
+  - AMap2DMap (~> 3.2.0)
+  - AMapSearch (~> 3.2.0)
+  - pop (~> 1.0.8)
+  - UMengSocial (~> 4.2.3)
+
+SPEC CHECKSUMS:
+  AMap2DMap: 02c73a3e55ac033e3b0b8ec35d3d21ffcac5aae3
+  AMapSearch: a885f0702578a441a22cb66fa74f8918c6d19e6f
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  UMengSocial: 85882abe5b20aa38ad558ece71360e16b5d50909
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="CollectFavoriteModel" representedClassName="CollectFavoriteModel" syncable="YES">
+        <attribute name="agreementAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="catalogId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clickCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cookingMethod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cookingWay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="effect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="englishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fittingCrowd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fittingRestriction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathLandscape" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathPortrait" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePathThumbnails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_collect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_purchase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCelebritySelf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="materialVideoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="method" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productionProcessPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taste" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeLength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vegetable_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vegetableCookingId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CollectFavoriteModel" positionX="-54" positionY="-9" width="128" height="420"/>
+    </elements>
+</model>
