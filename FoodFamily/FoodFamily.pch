@@ -47,7 +47,7 @@
 #define URL_MWLife  @"http://api.2meiwei.com/v1/collect/29973/?idx=%ld&size=18"
 //制作步骤
 //http://api.2meiwei.com/v1/recipe/27404/&appname=mw_ios&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522
-#define URL_FOOD_DETAILs @"http://api.2meiwei.com/v1/recipe/%@/&appname=mw_ios&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
+#define URL_COOK_FOOD @"http://api.2meiwei.com/v1/recipe/%@/&appname=mw_ios&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
 //滋阴
 #define URL_ZY @"http://api.2meiwei.com/v1/collect/56182/?idx=%ld&size=15&appname=mw_android&appver=1.0.12&osver=4.2.2&devicename=Coolpad+8297W&openudid=865092021677522"
 //补阳

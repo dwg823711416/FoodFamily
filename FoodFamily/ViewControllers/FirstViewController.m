@@ -45,7 +45,7 @@
     [self.view addSubview:self.foodImageView];
      [self feachData];
     //[self createScrollView];
-    NSLog(@"%@",NSHomeDirectory());
+   // NSLog(@"%@",NSHomeDirectory());
 }
 - (void)createScrollView{
 

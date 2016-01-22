@@ -14,5 +14,5 @@ typedef void(^FaileBlockType) (NSError *error);
 + (instancetype)sharedInstance;
 - (void)requestFirstPageDataWithPage:(NSInteger)page withSuccess:(SuccessBlockType)successBlock withFaileBlock:(FaileBlockType)faileBlock;
 - (void)requestThirdPageDataWithPage:(NSInteger)page withSuccess:(SuccessBlockType)successBlock withFaileBlock:(FaileBlockType)faileBlock;
-
+- (void)requestThirdPageDataWithId:(NSString *)numberId withSuccess:(SuccessBlockType)successBlock withFaileBlock:(FaileBlockType)faileBlock;
 @end

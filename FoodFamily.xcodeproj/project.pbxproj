@@ -91,6 +91,12 @@
 		BC95E47F1C50D2E80097356B /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = BC95E47E1C50D2E80097356B /* one.png */; };
 		BC95E4831C50DCAD0097356B /* ThirdPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E4811C50DCAD0097356B /* ThirdPopViewController.m */; };
 		BC95E4841C50DCAD0097356B /* ThirdPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC95E4821C50DCAD0097356B /* ThirdPopViewController.xib */; };
+		BC95E4881C51BEE50097356B /* ThirdCookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E4861C51BEE50097356B /* ThirdCookViewController.m */; };
+		BC95E4891C51BEE50097356B /* ThirdCookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC95E4871C51BEE50097356B /* ThirdCookViewController.xib */; };
+		BC95E48D1C51CC7F0097356B /* ThirdCookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E48C1C51CC7F0097356B /* ThirdCookModel.m */; };
+		BC95E4901C51D0950097356B /* ThirdCookBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E48F1C51D0950097356B /* ThirdCookBaseModel.m */; };
+		BC95E4931C51E1500097356B /* ThirdCookFoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E4921C51E1500097356B /* ThirdCookFoodView.m */; };
+		BC95E4971C5210910097356B /* ThirdCookFoodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC95E4961C5210910097356B /* ThirdCookFoodView.xib */; };
 		BCD189671C3F94A100E38587 /* fold.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD189651C3F94A100E38587 /* fold.png */; };
 		BCD189681C3F94A100E38587 /* unfold.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD189661C3F94A100E38587 /* unfold.png */; };
 		BCD1896C1C3F95CD00E38587 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1896A1C3F95CD00E38587 /* MyTableViewCell.m */; };
@@ -319,6 +325,16 @@
 		BC95E4801C50DCAD0097356B /* ThirdPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPopViewController.h; sourceTree = "<group>"; };
 		BC95E4811C50DCAD0097356B /* ThirdPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPopViewController.m; sourceTree = "<group>"; };
 		BC95E4821C50DCAD0097356B /* ThirdPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdPopViewController.xib; sourceTree = "<group>"; };
+		BC95E4851C51BEE50097356B /* ThirdCookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookViewController.h; sourceTree = "<group>"; };
+		BC95E4861C51BEE50097356B /* ThirdCookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookViewController.m; sourceTree = "<group>"; };
+		BC95E4871C51BEE50097356B /* ThirdCookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookViewController.xib; sourceTree = "<group>"; };
+		BC95E48B1C51CC7F0097356B /* ThirdCookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookModel.h; sourceTree = "<group>"; };
+		BC95E48C1C51CC7F0097356B /* ThirdCookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookModel.m; sourceTree = "<group>"; };
+		BC95E48E1C51D0950097356B /* ThirdCookBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookBaseModel.h; sourceTree = "<group>"; };
+		BC95E48F1C51D0950097356B /* ThirdCookBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookBaseModel.m; sourceTree = "<group>"; };
+		BC95E4911C51E1500097356B /* ThirdCookFoodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookFoodView.h; sourceTree = "<group>"; };
+		BC95E4921C51E1500097356B /* ThirdCookFoodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookFoodView.m; sourceTree = "<group>"; };
+		BC95E4961C5210910097356B /* ThirdCookFoodView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookFoodView.xib; sourceTree = "<group>"; };
 		BCD189651C3F94A100E38587 /* fold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fold.png; sourceTree = "<group>"; };
 		BCD189661C3F94A100E38587 /* unfold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unfold.png; sourceTree = "<group>"; };
 		BCD189691C3F95CD00E38587 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
@@ -513,6 +529,7 @@
 		BC0CAE681C27D87F002C40A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC95E48A1C51CBBA0097356B /* ThirdCookModel */,
 				BC95E4551C50BB690097356B /* ThirdPageModel */,
 				BC14EE3C1C3F696500694722 /* CityNameModel */,
 				BC0CAF791C2A899C002C40A8 /* 收藏Model */,
@@ -590,6 +607,9 @@
 		BC0CAE6E1C27D87F002C40A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC95E4911C51E1500097356B /* ThirdCookFoodView.h */,
+				BC95E4921C51E1500097356B /* ThirdCookFoodView.m */,
+				BC95E4961C5210910097356B /* ThirdCookFoodView.xib */,
 				BC95E44E1C5083EC0097356B /* ThirdCollectionViewCell.h */,
 				BC95E44F1C5083ED0097356B /* ThirdCollectionViewCell.m */,
 				BC95E4501C5083ED0097356B /* ThirdCollectionViewCell.xib */,
@@ -784,6 +804,9 @@
 				BC95E4801C50DCAD0097356B /* ThirdPopViewController.h */,
 				BC95E4811C50DCAD0097356B /* ThirdPopViewController.m */,
 				BC95E4821C50DCAD0097356B /* ThirdPopViewController.xib */,
+				BC95E4851C51BEE50097356B /* ThirdCookViewController.h */,
+				BC95E4861C51BEE50097356B /* ThirdCookViewController.m */,
+				BC95E4871C51BEE50097356B /* ThirdCookViewController.xib */,
 			);
 			name = "美味生活";
 			sourceTree = "<group>";
@@ -899,6 +922,17 @@
 				BC95E4601C50C68E0097356B /* JHRefreshCommonAniView.m */,
 			);
 			path = AnimationView;
+			sourceTree = "<group>";
+		};
+		BC95E48A1C51CBBA0097356B /* ThirdCookModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC95E48B1C51CC7F0097356B /* ThirdCookModel.h */,
+				BC95E48C1C51CC7F0097356B /* ThirdCookModel.m */,
+				BC95E48E1C51D0950097356B /* ThirdCookBaseModel.h */,
+				BC95E48F1C51D0950097356B /* ThirdCookBaseModel.m */,
+			);
+			name = ThirdCookModel;
 			sourceTree = "<group>";
 		};
 		BCD1896E1C3FBAFA00E38587 /* MMProgressHUD */ = {
@@ -1146,6 +1180,7 @@
 				BC95E4541C508A7A0097356B /* 111.png in Resources */,
 				BCD1896D1C3F95CD00E38587 /* MyTableViewCell.xib in Resources */,
 				BC95E4481C4E3C010097356B /* SecondViewController2.xib in Resources */,
+				BC95E4891C51BEE50097356B /* ThirdCookViewController.xib in Resources */,
 				BC95E4761C50C68E0097356B /* JHRefresh.bundle in Resources */,
 				BCDB57F51C2B7CEA001FD7F5 /* like1hl.png in Resources */,
 				BCDB57F01C2B7CEA001FD7F5 /* about@2x.png in Resources */,
@@ -1164,6 +1199,7 @@
 				BC0CAE591C27D7E8002C40A8 /* Main.storyboard in Resources */,
 				BCDB57CB1C2ACBC8001FD7F5 /* FourthCollectViewController.xib in Resources */,
 				BC0CAEF71C27E31B002C40A8 /* FirstViewController.xib in Resources */,
+				BC95E4971C5210910097356B /* ThirdCookFoodView.xib in Resources */,
 				BCDB57F91C2B8243001FD7F5 /* 个人中心.png in Resources */,
 				BC14EE3B1C3F694400694722 /* 城市代码.json in Resources */,
 				BCDB57F11C2B7CEA001FD7F5 /* back.png in Resources */,
@@ -1229,6 +1265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC95E4881C51BEE50097356B /* ThirdCookViewController.m in Sources */,
 				BC0CAED51C27D956002C40A8 /* UIAlertView+AFNetworking.m in Sources */,
 				BC95E4751C50C68E0097356B /* JHRefreshCommonAniView.m in Sources */,
 				BC95E47D1C50C68E0097356B /* UIView+JHExtension.m in Sources */,
@@ -1254,11 +1291,13 @@
 				BC14EDE11C3E15F500694722 /* SecondTopView.m in Sources */,
 				BCDB57AD1C2AB6D3001FD7F5 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				BC0CAE991C27D94F002C40A8 /* SDWebImageDownloaderOperation.m in Sources */,
+				BC95E4901C51D0950097356B /* ThirdCookBaseModel.m in Sources */,
 				BC0CAED21C27D956002C40A8 /* AFURLSessionManager.m in Sources */,
 				BC0CAE561C27D7E8002C40A8 /* ViewController.m in Sources */,
 				BC0CAE961C27D94F002C40A8 /* SDWebImageCompat.m in Sources */,
 				BCDB57AA1C2AB6D3001FD7F5 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				BCDB57B01C2AB6D3001FD7F5 /* MagicalRecord+Actions.m in Sources */,
+				BC95E4931C51E1500097356B /* ThirdCookFoodView.m in Sources */,
 				BCDB57E11C2ACFBD001FD7F5 /* CollectFavoriteModel.m in Sources */,
 				BC0CAE9D1C27D94F002C40A8 /* UIImage+GIF.m in Sources */,
 				BC0CAF1C1C27FE61002C40A8 /* PlayerView.m in Sources */,
@@ -1318,6 +1357,7 @@
 				BC0CAE941C27D94F002C40A8 /* NSData+ImageContentType.m in Sources */,
 				BCDB57A61C2AB6D3001FD7F5 /* NSManagedObject+MagicalRecord.m in Sources */,
 				BCD189851C3FBAFA00E38587 /* MMLinearProgressView.m in Sources */,
+				BC95E48D1C51CC7F0097356B /* ThirdCookModel.m in Sources */,
 				BC0CAF181C27FE4D002C40A8 /* VideoViewController.m in Sources */,
 				BC95E4831C50DCAD0097356B /* ThirdPopViewController.m in Sources */,
 				BCDB57A21C2AB6D3001FD7F5 /* NSString+MagicalDataImport.m in Sources */,

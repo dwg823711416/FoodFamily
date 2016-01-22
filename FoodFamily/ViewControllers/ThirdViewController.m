@@ -10,6 +10,8 @@
 #import "ThirdCollectionViewCell.h"
 #import "ThirdPageModelONE.h"
 #import "ThirdPopViewController.h"
+#import "ThirdCookViewController.h"
+
 #define CELLID @"collectionCellId"
 @interface ThirdViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIPopoverPresentationControllerDelegate>
 @property (nonatomic) UICollectionView       * collectionView;
@@ -213,7 +215,17 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     ThirdPageModelONE *model = _dataSouce[indexPath.row];
-    //NSLog(@"++++++%@",model.title);
+    ThirdCookViewController * TCVC = [[ThirdCookViewController alloc]init];
+    TCVC.thirdPageModelONE = model;
+    CATransition *animation = [CATransition animation];
+    //rippleEffect（水波抖动/chainEffect/butterflyEffect/genieEffect/suckEffect（三角）/pageCurl（上翻页）/pageUnCurl搜索（下翻页）/oglFlip（上下翻转/cameraIris/cameraIrisHollowOpen/cameraIrisHollowClose  （镜头快门，这一组动画是有效果，只是很难看，不建议使用
+    
+    animation.type = @"rippleEffect";
+    animation.subtype = @"fromRight";
+    animation.duration = 1;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [self.navigationController.view.layer addAnimation:animation forKey:nil];
+    [self.navigationController pushViewController:TCVC animated:YES];
 }
 
 

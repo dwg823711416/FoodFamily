@@ -53,7 +53,11 @@
     [self get:url parameters:nil success:successBlock failed:faileBlock];
 
 }
+- (void)requestThirdPageDataWithId:(NSString *)numberId withSuccess:(SuccessBlockType)successBlock withFaileBlock:(FaileBlockType)faileBlock{
+    NSString *url = [NSString stringWithFormat:URL_COOK_FOOD,numberId];
+    [self get:url parameters:nil success:successBlock failed:faileBlock];
 
+}
 - (void) get:(NSString *)url parameters:(NSDictionary *)dic success:(SuccessBlockType)successBlock failed:(FaileBlockType)failedBlock{
 
     [_httpManager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
