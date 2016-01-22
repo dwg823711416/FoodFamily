@@ -10,6 +10,10 @@
 #import "ThirdCookBaseModel.h"
 #import "ThirdCookModel.h"
 #import "ThirdCookFoodView.h"
+#import "ThirdCookTableViewCell1.h"
+#import "ThirdCookTableViewCell2.h"
+#import "ThirdCookTableViewCell3.h"
+#import "ThirdCookTableViewCell4.h"
 
 @interface ThirdCookViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic) NSArray            * dataSouce;
@@ -53,8 +57,25 @@
     _tableView.tableHeaderView = _foodView;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID1"];
+    //去除垂直的滚动条的指示
+    _tableView.showsVerticalScrollIndicator = NO;
+    //取消tableView自带的分割线
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.estimatedRowHeight = 44;
+
     
+    UINib *nib1 = [UINib nibWithNibName:@"ThirdCookTableViewCell1" bundle:nil];
+    [_tableView registerNib:nib1 forCellReuseIdentifier:@"cellID1"];
+    
+    UINib *nib2 = [UINib nibWithNibName:@"ThirdCookTableViewCell2" bundle:nil];
+    [_tableView registerNib:nib2 forCellReuseIdentifier:@"cellID2"];
+    
+    UINib *nib3 = [UINib nibWithNibName:@"ThirdCookTableViewCell3" bundle:nil];
+    [_tableView registerNib:nib3 forCellReuseIdentifier:@"cellID3"];
+    
+    UINib *nib4 = [UINib nibWithNibName:@"ThirdCookTableViewCell4" bundle:nil];
+    [_tableView registerNib:nib4 forCellReuseIdentifier:@"cellID4"];
+
     
     
     [self.view addSubview:_tableView];
@@ -68,7 +89,7 @@
             NSLog(@"%@",_cookModel.note);
         }
         [self addData];
-        
+        [_tableView reloadData];
     } withFaileBlock:^(NSError *error) {
         
     }];
@@ -87,9 +108,38 @@
 
 #pragma mark <tableView带理方法>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    if (section == 2) {
+        return _cookBaseModel.steps.count;
+    }
+    return 1;
 }
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//
+//    return 200;
+//}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        ThirdCookTableViewCell1 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID1" forIndexPath:indexPath];
+        cell.cell1Lable.text = _cookBaseModel.message;
+        return cell;
+    }else if (indexPath.section == 1){
+        ThirdCookTableViewCell1 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID1" forIndexPath:indexPath];
+        cell.cell1Lable.text = _cookBaseModel.mainingredient;
+        return cell;
+    
+    }else if (indexPath.section == 2){
+        ThirdCookTableViewCell3 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID3" forIndexPath:indexPath];
+        _cookModel = _cookBaseModel.steps[indexPath.row];
+        [cell.cell3ImageView sd_setImageWithURL:[NSURL URLWithString:_cookModel.pic] placeholderImage:[UIImage imageNamed:@"111.png"]];
+        cell.cell3Lable.text = _cookModel.note;
+        return cell;
+    }else{
+        ThirdCookTableViewCell4 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID4" forIndexPath:indexPath];
+        return cell;
+    
+    }
+    
+    
     return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

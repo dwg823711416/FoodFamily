@@ -161,6 +161,14 @@
 		BCDB57F51C2B7CEA001FD7F5 /* like1hl.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDB57ED1C2B7CEA001FD7F5 /* like1hl.png */; };
 		BCDB57F71C2B7CEA001FD7F5 /* TabBar背景.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDB57EF1C2B7CEA001FD7F5 /* TabBar背景.png */; };
 		BCDB57F91C2B8243001FD7F5 /* 个人中心.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDB57F81C2B8243001FD7F5 /* 个人中心.png */; };
+		D98E4B0B1C5282CC0001E08C /* ThirdCookTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E4B091C5282CC0001E08C /* ThirdCookTableViewCell2.m */; };
+		D98E4B0C1C5282CC0001E08C /* ThirdCookTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98E4B0A1C5282CC0001E08C /* ThirdCookTableViewCell2.xib */; };
+		D98E4B101C5282DF0001E08C /* ThirdCookTableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E4B0E1C5282DF0001E08C /* ThirdCookTableViewCell3.m */; };
+		D98E4B111C5282DF0001E08C /* ThirdCookTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98E4B0F1C5282DF0001E08C /* ThirdCookTableViewCell3.xib */; };
+		D98E4B151C5282F40001E08C /* ThirdCookTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E4B131C5282F40001E08C /* ThirdCookTableViewCell4.m */; };
+		D98E4B161C5282F40001E08C /* ThirdCookTableViewCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98E4B141C5282F40001E08C /* ThirdCookTableViewCell4.xib */; };
+		D98E4B1A1C5291B60001E08C /* ThirdCookTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E4B181C5291B60001E08C /* ThirdCookTableViewCell1.m */; };
+		D98E4B1B1C5291B60001E08C /* ThirdCookTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98E4B191C5291B60001E08C /* ThirdCookTableViewCell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -450,6 +458,18 @@
 		BCDB57ED1C2B7CEA001FD7F5 /* like1hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like1hl.png; sourceTree = "<group>"; };
 		BCDB57EF1C2B7CEA001FD7F5 /* TabBar背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar背景.png"; sourceTree = "<group>"; };
 		BCDB57F81C2B8243001FD7F5 /* 个人中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心.png"; sourceTree = "<group>"; };
+		D98E4B081C5282CC0001E08C /* ThirdCookTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookTableViewCell2.h; sourceTree = "<group>"; };
+		D98E4B091C5282CC0001E08C /* ThirdCookTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookTableViewCell2.m; sourceTree = "<group>"; };
+		D98E4B0A1C5282CC0001E08C /* ThirdCookTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookTableViewCell2.xib; sourceTree = "<group>"; };
+		D98E4B0D1C5282DF0001E08C /* ThirdCookTableViewCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookTableViewCell3.h; sourceTree = "<group>"; };
+		D98E4B0E1C5282DF0001E08C /* ThirdCookTableViewCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookTableViewCell3.m; sourceTree = "<group>"; };
+		D98E4B0F1C5282DF0001E08C /* ThirdCookTableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookTableViewCell3.xib; sourceTree = "<group>"; };
+		D98E4B121C5282F40001E08C /* ThirdCookTableViewCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookTableViewCell4.h; sourceTree = "<group>"; };
+		D98E4B131C5282F40001E08C /* ThirdCookTableViewCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookTableViewCell4.m; sourceTree = "<group>"; };
+		D98E4B141C5282F40001E08C /* ThirdCookTableViewCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookTableViewCell4.xib; sourceTree = "<group>"; };
+		D98E4B171C5291B60001E08C /* ThirdCookTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCookTableViewCell1.h; sourceTree = "<group>"; };
+		D98E4B181C5291B60001E08C /* ThirdCookTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCookTableViewCell1.m; sourceTree = "<group>"; };
+		D98E4B191C5291B60001E08C /* ThirdCookTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCookTableViewCell1.xib; sourceTree = "<group>"; };
 		EAD530D0078A4208B361E1BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -607,6 +627,7 @@
 		BC0CAE6E1C27D87F002C40A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D98E4B021C5282090001E08C /* ThirdCell */,
 				BC95E4911C51E1500097356B /* ThirdCookFoodView.h */,
 				BC95E4921C51E1500097356B /* ThirdCookFoodView.m */,
 				BC95E4961C5210910097356B /* ThirdCookFoodView.xib */,
@@ -1111,6 +1132,25 @@
 			name = FourthCell;
 			sourceTree = "<group>";
 		};
+		D98E4B021C5282090001E08C /* ThirdCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98E4B171C5291B60001E08C /* ThirdCookTableViewCell1.h */,
+				D98E4B181C5291B60001E08C /* ThirdCookTableViewCell1.m */,
+				D98E4B191C5291B60001E08C /* ThirdCookTableViewCell1.xib */,
+				D98E4B081C5282CC0001E08C /* ThirdCookTableViewCell2.h */,
+				D98E4B091C5282CC0001E08C /* ThirdCookTableViewCell2.m */,
+				D98E4B0A1C5282CC0001E08C /* ThirdCookTableViewCell2.xib */,
+				D98E4B0D1C5282DF0001E08C /* ThirdCookTableViewCell3.h */,
+				D98E4B0E1C5282DF0001E08C /* ThirdCookTableViewCell3.m */,
+				D98E4B0F1C5282DF0001E08C /* ThirdCookTableViewCell3.xib */,
+				D98E4B121C5282F40001E08C /* ThirdCookTableViewCell4.h */,
+				D98E4B131C5282F40001E08C /* ThirdCookTableViewCell4.m */,
+				D98E4B141C5282F40001E08C /* ThirdCookTableViewCell4.xib */,
+			);
+			name = ThirdCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1181,6 +1221,7 @@
 				BCD1896D1C3F95CD00E38587 /* MyTableViewCell.xib in Resources */,
 				BC95E4481C4E3C010097356B /* SecondViewController2.xib in Resources */,
 				BC95E4891C51BEE50097356B /* ThirdCookViewController.xib in Resources */,
+				D98E4B161C5282F40001E08C /* ThirdCookTableViewCell4.xib in Resources */,
 				BC95E4761C50C68E0097356B /* JHRefresh.bundle in Resources */,
 				BCDB57F51C2B7CEA001FD7F5 /* like1hl.png in Resources */,
 				BCDB57F01C2B7CEA001FD7F5 /* about@2x.png in Resources */,
@@ -1188,10 +1229,12 @@
 				BCDB57DC1C2ACD21001FD7F5 /* FourthTableViewCell.xib in Resources */,
 				BCDB57F21C2B7CEA001FD7F5 /* back4.png in Resources */,
 				BCDB57D01C2ACC03001FD7F5 /* FourthViewController.xib in Resources */,
+				D98E4B0C1C5282CC0001E08C /* ThirdCookTableViewCell2.xib in Resources */,
 				BC95E4841C50DCAD0097356B /* ThirdPopViewController.xib in Resources */,
 				BC95E4521C5083ED0097356B /* ThirdCollectionViewCell.xib in Resources */,
 				BCDB57F71C2B7CEA001FD7F5 /* TabBar背景.png in Resources */,
 				BC95E44D1C4F6DB60097356B /* MyMapSearchTableViewCell.xib in Resources */,
+				D98E4B1B1C5291B60001E08C /* ThirdCookTableViewCell1.xib in Resources */,
 				BCDB57D61C2ACCA0001FD7F5 /* FourthCollectTableViewCell.xib in Resources */,
 				BC14EDE21C3E15F500694722 /* SecondTopView.xib in Resources */,
 				BC14EDE71C3E42B000694722 /* 我的文档.txt in Resources */,
@@ -1206,6 +1249,7 @@
 				BC0CAF191C27FE4D002C40A8 /* VideoViewController.xib in Resources */,
 				BC95E47F1C50D2E80097356B /* one.png in Resources */,
 				BC0CAEFC1C27E337002C40A8 /* SecondViewController.xib in Resources */,
+				D98E4B111C5282DF0001E08C /* ThirdCookTableViewCell3.xib in Resources */,
 				BCDB57C61C2ACBBC001FD7F5 /* OurViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1298,7 +1342,9 @@
 				BCDB57AA1C2AB6D3001FD7F5 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				BCDB57B01C2AB6D3001FD7F5 /* MagicalRecord+Actions.m in Sources */,
 				BC95E4931C51E1500097356B /* ThirdCookFoodView.m in Sources */,
+				D98E4B101C5282DF0001E08C /* ThirdCookTableViewCell3.m in Sources */,
 				BCDB57E11C2ACFBD001FD7F5 /* CollectFavoriteModel.m in Sources */,
+				D98E4B1A1C5291B60001E08C /* ThirdCookTableViewCell1.m in Sources */,
 				BC0CAE9D1C27D94F002C40A8 /* UIImage+GIF.m in Sources */,
 				BC0CAF1C1C27FE61002C40A8 /* PlayerView.m in Sources */,
 				BC0CAECE1C27D956002C40A8 /* AFSecurityPolicy.m in Sources */,
@@ -1353,6 +1399,7 @@
 				BC95E47A1C50C68E0097356B /* JHRefreshHeaderView.m in Sources */,
 				BC95E4791C50C68E0097356B /* JHRefreshFooterView.m in Sources */,
 				BC95E4771C50C68E0097356B /* JHRefreshBaseView.m in Sources */,
+				D98E4B151C5282F40001E08C /* ThirdCookTableViewCell4.m in Sources */,
 				BC95E4731C50C68E0097356B /* JHRefreshAmazingAniView.m in Sources */,
 				BC0CAE941C27D94F002C40A8 /* NSData+ImageContentType.m in Sources */,
 				BCDB57A61C2AB6D3001FD7F5 /* NSManagedObject+MagicalRecord.m in Sources */,
@@ -1378,6 +1425,7 @@
 				BCDB57A11C2AB6D3001FD7F5 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				BCD1898D1C3FBAFA00E38587 /* MMVectorImage.m in Sources */,
 				BC0CAF0D1C27F87C002C40A8 /* BaseModel.m in Sources */,
+				D98E4B0B1C5282CC0001E08C /* ThirdCookTableViewCell2.m in Sources */,
 				BCD189881C3FBAFA00E38587 /* MMProgressHUD.m in Sources */,
 				BC0CAE951C27D94F002C40A8 /* SDImageCache.m in Sources */,
 				BCD189891C3FBAFA00E38587 /* MMProgressHUDOverlayView.m in Sources */,
