@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdCookTableViewCell4 : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIWebView *cell4WebView;
 
 @end

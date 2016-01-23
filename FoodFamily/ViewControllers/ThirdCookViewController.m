@@ -20,7 +20,6 @@
 @property (nonatomic) ThirdCookBaseModel * cookBaseModel;
 @property (nonatomic) ThirdCookModel     * cookModel;
 @property (nonatomic) ThirdCookFoodView  * topView;
-@property (nonatomic) UIView             * foodView;
 @property (nonatomic) UITableView        * tableView;
 @property (nonatomic) NSArray            * titleArr;
 @end
@@ -39,29 +38,26 @@
 }
 
 - (void)crateFoodView{
-    _foodView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3)];
-    //_foodImageView.backgroundColor = [UIColor grayColor];
-   // _foodImageView.image = [UIImage imageNamed:@"111.png"];
-    //[self.view addSubview:_foodView];
-    //_foodView = [[ThirdCookFoodView alloc]init];
+    
     UINib *nib = [UINib nibWithNibName:@"ThirdCookFoodView" bundle:nil];
     _topView = [[nib instantiateWithOwner:nil options:nil] firstObject];
     _topView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/3 );
+    _topView.layer.cornerRadius = 20;
+    _topView.layer.masksToBounds = YES;
    
-    [_foodView addSubview:self.topView];
 }
 
 - (void)creatTableView{
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , SCREEN_HEIGHT) style:UITableViewStylePlain];
-    _tableView.backgroundColor = [UIColor redColor];
-    _tableView.tableHeaderView = _foodView;
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , SCREEN_HEIGHT -49) style:UITableViewStylePlain];
+    _tableView.backgroundColor = [UIColor clearColor];
+    _tableView.tableHeaderView = _topView;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     //去除垂直的滚动条的指示
     _tableView.showsVerticalScrollIndicator = NO;
     //取消tableView自带的分割线
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _tableView.estimatedRowHeight = 44;
+    _tableView.estimatedRowHeight = 20;
 
     
     UINib *nib1 = [UINib nibWithNibName:@"ThirdCookTableViewCell1" bundle:nil];
@@ -113,14 +109,27 @@
     }
     return 1;
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//
-//    return 200;
-//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        return 50;
+    }
+    if (indexPath.section == 1) {
+        return 80;
+    }
+    if (indexPath.section == 3) {
+        return 200;
+    }
+    return 115;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         ThirdCookTableViewCell1 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID1" forIndexPath:indexPath];
-        cell.cell1Lable.text = _cookBaseModel.message;
+        if(!_cookBaseModel.message.length){
+            cell.cell1Lable.text = _cookBaseModel.message;
+        }else{
+            cell.cell1Lable.text = @"暂无";
+        }
+        
         return cell;
     }else if (indexPath.section == 1){
         ThirdCookTableViewCell1 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID1" forIndexPath:indexPath];
@@ -130,11 +139,24 @@
     }else if (indexPath.section == 2){
         ThirdCookTableViewCell3 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID3" forIndexPath:indexPath];
         _cookModel = _cookBaseModel.steps[indexPath.row];
-        [cell.cell3ImageView sd_setImageWithURL:[NSURL URLWithString:_cookModel.pic] placeholderImage:[UIImage imageNamed:@"111.png"]];
-        cell.cell3Lable.text = _cookModel.note;
+        
+       [cell.cell3ImageView sd_setImageWithURL:[NSURL URLWithString:_cookModel.pic] placeholderImage:[UIImage imageNamed:@"111.png"]];
+        cell.cell3ImageView.layer.cornerRadius = 12;
+        cell.cell3ImageView.layer.masksToBounds = YES;
+        cell.cell3Lable.text = [NSString stringWithFormat:@"%ld、%@",indexPath.row + 1,_cookModel.note];
+        
         return cell;
-    }else{
+    }else if (indexPath.section == 3){
         ThirdCookTableViewCell4 *cell = [_tableView dequeueReusableCellWithIdentifier:@"cellID4" forIndexPath:indexPath];
+        NSLog(@"%@",_cookBaseModel.tips );
+        if (_cookBaseModel.tips.length) {
+            [cell.cell4WebView loadHTMLString:_cookBaseModel.tips baseURL:nil];
+        }else{
+        
+            [cell.cell4WebView loadHTMLString:@"尽情的享受下自己亲手做的美食吧" baseURL:nil];
+        
+        }
+        
         return cell;
     
     }
@@ -143,8 +165,8 @@
     return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-
-    return 50;
+    
+    return 30;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
@@ -152,25 +174,28 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
-    UILabel *lable = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, 200, 30)];
+    UILabel *lable = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, SCREEN_WIDTH - 10, 30)];
+    lable.layer.cornerRadius = 15;
+    lable.layer.masksToBounds = YES;
+    lable.backgroundColor = [UIColor grayColor];
     if(section == 0){
         
-        lable.text = @"食物简介";
+        lable.text = @"   食物简介";
         [view addSubview:lable];
-        view.backgroundColor = [UIColor grayColor];
+        //view.backgroundColor = [UIColor greenColor];
     }else if (section == 1){
-        lable.text = @"所需食材";
+        lable.text = @"   所需食材";
         [view addSubview:lable];
-        view.backgroundColor = [UIColor blueColor];
+       // view.backgroundColor = [UIColor blueColor];
 
     }else if (section == 2){
-        lable.text = @"具体做法";
+        lable.text = @"   具体做法";
         [view addSubview:lable];
-        view.backgroundColor = [UIColor purpleColor];
+        //view.backgroundColor = [UIColor purpleColor];
     }else if (section == 3){
-        lable.text = @"后记";
+        lable.text = @"   后记";
         [view addSubview:lable];
-        view.backgroundColor = [UIColor blackColor];
+        //view.backgroundColor = [UIColor brownColor];
     }
     
     return view;
