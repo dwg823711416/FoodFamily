@@ -23,7 +23,10 @@
     self.collectlable.text = model.name;
 }
 
-
+- (void)updateWithThirdBaseModel:(CollectFavoriteModel3 *)model{
+    [self.collectImageView sd_setImageWithURL:[NSURL URLWithString:model.cover]];
+    self.collectlable.text = model.title;
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

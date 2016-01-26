@@ -68,6 +68,12 @@
 		BC14EDE71C3E42B000694722 /* 我的文档.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC14EDE61C3E42B000694722 /* 我的文档.txt */; };
 		BC14EE3B1C3F694400694722 /* 城市代码.json in Resources */ = {isa = PBXBuildFile; fileRef = BC14EE3A1C3F694400694722 /* 城市代码.json */; };
 		BC14EE3F1C3F69A000694722 /* CityNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14EE3E1C3F69A000694722 /* CityNameModel.m */; };
+		BC6B45881C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B45811C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.m */; };
+		BC6B45891C55CECD00638054 /* CollectFavoriteModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B45831C55CECD00638054 /* CollectFavoriteModel3.m */; };
+		BC6B458A1C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B45851C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.m */; };
+		BC6B458B1C55CECD00638054 /* CollectFavoriteModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B45871C55CECD00638054 /* CollectFavoriteModel2.m */; };
+		BC6B458F1C574A9500638054 /* ThirdCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B458D1C574A9500638054 /* ThirdCollectViewController.m */; };
+		BC6B45901C574A9500638054 /* ThirdCollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6B458E1C574A9500638054 /* ThirdCollectViewController.xib */; };
 		BC95E4431C4DCBB70097356B /* DWGCirculateScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E4421C4DCBB70097356B /* DWGCirculateScrollView.m */; };
 		BC95E4471C4E3C010097356B /* SecondViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = BC95E4451C4E3C010097356B /* SecondViewController2.m */; };
 		BC95E4481C4E3C010097356B /* SecondViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC95E4461C4E3C010097356B /* SecondViewController2.xib */; };
@@ -291,6 +297,17 @@
 		BC14EE3A1C3F694400694722 /* 城市代码.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "城市代码.json"; sourceTree = "<group>"; };
 		BC14EE3D1C3F69A000694722 /* CityNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityNameModel.h; sourceTree = "<group>"; };
 		BC14EE3E1C3F69A000694722 /* CityNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityNameModel.m; sourceTree = "<group>"; };
+		BC6B45801C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CollectFavoriteModel3+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BC6B45811C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CollectFavoriteModel3+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BC6B45821C55CECD00638054 /* CollectFavoriteModel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectFavoriteModel3.h; sourceTree = "<group>"; };
+		BC6B45831C55CECD00638054 /* CollectFavoriteModel3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectFavoriteModel3.m; sourceTree = "<group>"; };
+		BC6B45841C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CollectFavoriteModel2+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BC6B45851C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CollectFavoriteModel2+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BC6B45861C55CECD00638054 /* CollectFavoriteModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectFavoriteModel2.h; sourceTree = "<group>"; };
+		BC6B45871C55CECD00638054 /* CollectFavoriteModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectFavoriteModel2.m; sourceTree = "<group>"; };
+		BC6B458C1C574A9500638054 /* ThirdCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCollectViewController.h; sourceTree = "<group>"; };
+		BC6B458D1C574A9500638054 /* ThirdCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCollectViewController.m; sourceTree = "<group>"; };
+		BC6B458E1C574A9500638054 /* ThirdCollectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCollectViewController.xib; sourceTree = "<group>"; };
 		BC95E4411C4DCBB70097356B /* DWGCirculateScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWGCirculateScrollView.h; sourceTree = "<group>"; };
 		BC95E4421C4DCBB70097356B /* DWGCirculateScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWGCirculateScrollView.m; sourceTree = "<group>"; };
 		BC95E4441C4E3C010097356B /* SecondViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController2.h; sourceTree = "<group>"; };
@@ -879,10 +896,18 @@
 		BC0CAF791C2A899C002C40A8 /* 收藏Model */ = {
 			isa = PBXGroup;
 			children = (
-				BCDB57DD1C2ACFBD001FD7F5 /* CollectFavoriteModel.h */,
-				BCDB57DE1C2ACFBD001FD7F5 /* CollectFavoriteModel.m */,
+				BC6B45801C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.h */,
+				BC6B45811C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.m */,
+				BC6B45821C55CECD00638054 /* CollectFavoriteModel3.h */,
+				BC6B45831C55CECD00638054 /* CollectFavoriteModel3.m */,
+				BC6B45841C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.h */,
+				BC6B45851C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.m */,
+				BC6B45861C55CECD00638054 /* CollectFavoriteModel2.h */,
+				BC6B45871C55CECD00638054 /* CollectFavoriteModel2.m */,
 				BCDB57DF1C2ACFBD001FD7F5 /* CollectFavoriteModel+CoreDataProperties.h */,
 				BCDB57E01C2ACFBD001FD7F5 /* CollectFavoriteModel+CoreDataProperties.m */,
+				BCDB57DD1C2ACFBD001FD7F5 /* CollectFavoriteModel.h */,
+				BCDB57DE1C2ACFBD001FD7F5 /* CollectFavoriteModel.m */,
 				BCDB57B71C2AC1F2001FD7F5 /* FoodFamily.xcdatamodeld */,
 			);
 			name = "收藏Model";
@@ -1098,6 +1123,9 @@
 				BCDB57E31C2ADED1001FD7F5 /* CollectDetailViewController.h */,
 				BCDB57E41C2ADED1001FD7F5 /* CollectDetailViewController.m */,
 				BCDB57E51C2ADED1001FD7F5 /* CollectDetailViewController.xib */,
+				BC6B458C1C574A9500638054 /* ThirdCollectViewController.h */,
+				BC6B458D1C574A9500638054 /* ThirdCollectViewController.m */,
+				BC6B458E1C574A9500638054 /* ThirdCollectViewController.xib */,
 			);
 			name = "我的收藏";
 			sourceTree = "<group>";
@@ -1244,6 +1272,7 @@
 				BC0CAEF71C27E31B002C40A8 /* FirstViewController.xib in Resources */,
 				BC95E4971C5210910097356B /* ThirdCookFoodView.xib in Resources */,
 				BCDB57F91C2B8243001FD7F5 /* 个人中心.png in Resources */,
+				BC6B45901C574A9500638054 /* ThirdCollectViewController.xib in Resources */,
 				BC14EE3B1C3F694400694722 /* 城市代码.json in Resources */,
 				BCDB57F11C2B7CEA001FD7F5 /* back.png in Resources */,
 				BC0CAF191C27FE4D002C40A8 /* VideoViewController.xib in Resources */,
@@ -1313,7 +1342,9 @@
 				BC0CAED51C27D956002C40A8 /* UIAlertView+AFNetworking.m in Sources */,
 				BC95E4751C50C68E0097356B /* JHRefreshCommonAniView.m in Sources */,
 				BC95E47D1C50C68E0097356B /* UIView+JHExtension.m in Sources */,
+				BC6B458B1C55CECD00638054 /* CollectFavoriteModel2.m in Sources */,
 				BC0CAED71C27D956002C40A8 /* UIImageView+AFNetworking.m in Sources */,
+				BC6B458A1C55CECD00638054 /* CollectFavoriteModel2+CoreDataProperties.m in Sources */,
 				BC95E4431C4DCBB70097356B /* DWGCirculateScrollView.m in Sources */,
 				BC0CAED01C27D956002C40A8 /* AFURLRequestSerialization.m in Sources */,
 				BC95E47C1C50C68E0097356B /* UIScrollView+JHRefresh.m in Sources */,
@@ -1325,6 +1356,8 @@
 				BCDB57A71C2AB6D3001FD7F5 /* NSManagedObject+MagicalRequests.m in Sources */,
 				BC0CAEA01C27D94F002C40A8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BCDB57AC1C2AB6D3001FD7F5 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				BC6B45891C55CECD00638054 /* CollectFavoriteModel3.m in Sources */,
+				BC6B45881C55CECD00638054 /* CollectFavoriteModel3+CoreDataProperties.m in Sources */,
 				BC0CAED61C27D956002C40A8 /* UIButton+AFNetworking.m in Sources */,
 				BCDB57AE1C2AB6D3001FD7F5 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				BC0CAE9E1C27D94F002C40A8 /* UIImage+MultiFormat.m in Sources */,
@@ -1358,6 +1391,7 @@
 				BCDB57A81C2AB6D3001FD7F5 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
 				BCD1898C1C3FBAFA00E38587 /* MMRadialProgressView.m in Sources */,
 				BCDB57B21C2AB6D3001FD7F5 /* MagicalRecord+iCloud.m in Sources */,
+				BC6B458F1C574A9500638054 /* ThirdCollectViewController.m in Sources */,
 				BC95E4741C50C68E0097356B /* JHRefreshAniBaseView.m in Sources */,
 				BCDB57B31C2AB6D3001FD7F5 /* MagicalRecord+Options.m in Sources */,
 				BC0CAE531C27D7E8002C40A8 /* AppDelegate.m in Sources */,
@@ -1542,6 +1576,8 @@
 			baseConfigurationReference = 7B4B1F9B84231FD14F606145 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FoodFamily/FoodFamily.pch";
 				INFOPLIST_FILE = FoodFamily/Info.plist;
@@ -1549,6 +1585,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DWG.FoodFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1557,6 +1595,8 @@
 			baseConfigurationReference = EAD530D0078A4208B361E1BC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FoodFamily/FoodFamily.pch";
 				INFOPLIST_FILE = FoodFamily/Info.plist;
@@ -1564,6 +1604,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DWG.FoodFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

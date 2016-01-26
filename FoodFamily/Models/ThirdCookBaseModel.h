@@ -24,5 +24,6 @@
 @property (nonatomic,copy) NSString * tips;
 @property (nonatomic)      NSArray  * steps;
 @property (nonatomic)      NSString * cover;
+@property (nonatomic)      NSNumber * stepcount;
 + (NSMutableArray*)parseRespondsData:(NSDictionary*)dictionary;
 @end

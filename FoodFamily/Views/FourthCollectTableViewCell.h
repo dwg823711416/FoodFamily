@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "CollectFavoriteModel.h"
+#import "CollectFavoriteModel3.h"
 @interface FourthCollectTableViewCell : UITableViewCell
 - (void)updateWithModel:(CollectFavoriteModel *)model;
+- (void)updateWithThirdBaseModel:(CollectFavoriteModel3 *)model;
 @end

@@ -13,6 +13,6 @@
 @property (nonatomic,copy) NSString * rid;
 @property (nonatomic,copy) NSString * note;
 @property (nonatomic,copy) NSString * pic;
-
+@property (nonatomic)      NSNumber * idx;
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
     <entity name="CollectFavoriteModel" representedClassName="CollectFavoriteModel" syncable="YES">
         <attribute name="agreementAmount" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="catalogId" optional="YES" attributeType="String" syncable="YES"/>
@@ -27,7 +27,33 @@
         <attribute name="vegetable_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="vegetableCookingId" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="CollectFavoriteModel2" representedClassName="CollectFavoriteModel2" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CollectFavoriteModel3" representedClassName="CollectFavoriteModel3" syncable="YES">
+        <attribute name="basefood" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cuisine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="during" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ingredient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainingredient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stepcount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="subiect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="technics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tips" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="CollectFavoriteModel" positionX="-54" positionY="-9" width="128" height="420"/>
+        <element name="CollectFavoriteModel2" positionX="-54" positionY="144" width="128" height="120"/>
+        <element name="CollectFavoriteModel3" positionX="-45" positionY="153" width="128" height="270"/>
     </elements>
 </model>

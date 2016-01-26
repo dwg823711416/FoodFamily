@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title = @"美味生活";
     _strNew = @"家常饭菜";
      _dataSouce = [[NSMutableArray alloc]init];

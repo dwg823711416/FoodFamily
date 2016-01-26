@@ -7,16 +7,22 @@
 //
 
 #import "FourthCollectViewController.h"
-#import "CollectFavoriteModel.h"
 #import "FourthCollectTableViewCell.h"
 #import "CollectDetailViewController.h"
 #import "VideoViewController.h"
+#import "CollectFavoriteModel.h"
+#import "CollectFavoriteModel2.h"
+#import "CollectFavoriteModel3.h"
+#import "ThirdCollectViewController.h"
 
 @interface FourthCollectViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic)UITableView *tableView;
+@property (nonatomic)UITableView    *tableView;
 @property (nonatomic)NSMutableArray *dataArray;
-@property (nonatomic)UILabel *squareLable;
-@property (nonatomic)UIImageView *foodImageView;
+@property (nonatomic)UILabel        *squareLable;
+@property (nonatomic)UIImageView    *foodImageView;
+@property (nonatomic)NSMutableArray *thirdBaseDataArray;
+@property (nonatomic)NSMutableArray *thirdCookDataArray;
+
 @end
 
 @implementation FourthCollectViewController
@@ -36,8 +42,11 @@
 
 - (void)requestData{
     NSArray *arr = [CollectFavoriteModel MR_findAll];
+    NSArray *thirdBaseArr = [CollectFavoriteModel3 MR_findAll];
+   // NSArray *thirdCookArr = [CollectFavoriteModel2 MR_findAll];
     _dataArray = [NSMutableArray arrayWithArray:arr];
-    if (_dataArray.count == 0) {
+    _thirdBaseDataArray = [NSMutableArray arrayWithArray:thirdBaseArr];
+    if (_dataArray.count == 0 && _thirdBaseDataArray.count == 0) {
          [self.view addSubview:self.squareLable];
         [self testFlyInAnimation];
     }
@@ -103,26 +112,41 @@
         //遍历删除元素
         for (NSInteger i = 0; i < sortedArr.count; i++) {
              NSIndexPath * oneIndexPath = sortedArr[i];
-            NSArray *allModel = [CollectFavoriteModel MR_findAll];
-            CollectFavoriteModel *model = [allModel objectAtIndex:oneIndexPath.row];
-            //删除一个对象
-            [model MR_deleteEntity];
-            [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-           
-            NSMutableArray * sectionArr = _dataArray;
-            NSLog(@"%@",_dataArray);
-            [sectionArr removeObjectAtIndex:oneIndexPath.row];
+            if (oneIndexPath.section == 0) {
+                NSArray *allModel = [CollectFavoriteModel MR_findAll];
+                CollectFavoriteModel *model = [allModel objectAtIndex:oneIndexPath.row];
+                //删除一个对象
+                [model MR_deleteEntity];
+                [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+                
+                NSMutableArray * sectionArr = _dataArray;
+              //  NSLog(@"%@",_dataArray);
+                [sectionArr removeObjectAtIndex:oneIndexPath.row];
+            }else{
+               NSArray *allModel = [CollectFavoriteModel3 MR_findAll];
+                CollectFavoriteModel3 *model3 = [allModel objectAtIndex:oneIndexPath.row];
+//                NSArray * thirdCookArr = [CollectFavoriteModel2 MR_findAllWithPredicate:[NSPredicate predicateWithFormat:@"rid=%@",model3.id]];
+                [CollectFavoriteModel2 MR_deleteAllMatchingPredicate:[NSPredicate predicateWithFormat:@"rid=%@",model3.id]];
+                
+                [model3 MR_deleteEntity];
+                [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+                NSMutableArray * sectionArr = _thirdBaseDataArray;
+               // NSLog(@"%@",_thirdBaseDataArray);
+                [sectionArr removeObjectAtIndex:oneIndexPath.row];
+            
+            }
         }
         //2界面上面消除
         [_tableView deleteRowsAtIndexPaths:selectedArr withRowAnimation:UITableViewRowAnimationFade];
     }
-    if (_dataArray.count == 0) {
+    if (_dataArray.count == 0&&_thirdBaseDataArray.count == 0) {
         [self.view addSubview:self.squareLable];
         [self testFlyInAnimation];
     }
 
 }
 #pragma mark - 编辑相关的操作 -
+
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
@@ -134,13 +158,20 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"选中了第%ld组 第%ld行",indexPath.section,indexPath.row);
-    CollectDetailViewController *CDVC = [[CollectDetailViewController alloc]init];
-    CollectFavoriteModel *model = self.dataArray[indexPath.row];
-    CDVC.model = model;
-    [self.navigationController pushViewController:CDVC animated:YES];
-    
-    
-
+    if (!_tableView.editing) {
+        if(indexPath.section == 0){
+            CollectDetailViewController *CDVC = [[CollectDetailViewController alloc]init];
+            CollectFavoriteModel *model = self.dataArray[indexPath.row];
+            CDVC.model = model;
+            [self.navigationController pushViewController:CDVC animated:YES];
+        }else{
+            ThirdCollectViewController *TCVC = [[ThirdCollectViewController alloc]init];
+            CollectFavoriteModel3 *thirdBaseModel = self.thirdBaseDataArray[indexPath.row];
+            TCVC.cookBaseModel = thirdBaseModel;
+            [self.navigationController pushViewController:TCVC animated:YES];
+        
+        }
+    }
 }
 
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -167,13 +198,36 @@
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _dataArray.count;
+    if (section == 0) {
+        return _dataArray.count;
+    }else{
+        return _thirdBaseDataArray.count;
+    }
+    
 }
-
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 30;
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return @"视频收藏";
+    }else{
+       return @"图片收藏";
+    }
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     FourthCollectTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
-    CollectFavoriteModel *model = self.dataArray[indexPath.row];
-    [cell updateWithModel:model];
+    if(indexPath.section == 0){
+        CollectFavoriteModel *model = self.dataArray[indexPath.row];
+        [cell updateWithModel:model];
+    }else{
+        CollectFavoriteModel3 *thirdBaseModel = self.thirdBaseDataArray[indexPath.row];
+       [cell updateWithThirdBaseModel:thirdBaseModel];
+    }
+    
     return cell;
 }
 
